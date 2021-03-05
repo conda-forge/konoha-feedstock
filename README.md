@@ -13,6 +13,11 @@ Development: https://github.com/himkt/konoha
 
 Documentation: https://konoha.readthedocs.io/en/latest/?badge=latest
 
+Konoha is a Python library for providing easy-to-use integrated interface of
+various Japanese tokenziers, which enables you to switch a tokenizer and
+boost your pre-processing.
+
+
 Current build status
 ====================
 
