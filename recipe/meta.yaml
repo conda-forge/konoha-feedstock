@@ -21,8 +21,10 @@ requirements:
     - poetry >=0.12
     - python >=3.6.1,<4.0.0
   run:
+    - importlib-metadata >=3.7.0,<4.0.0
     - overrides >=3.0.0,<4.0.0
-    - python >=3.6.1,<4.0.0
+    - python >=3.6,<4.0
+    - requests >=2.25.1,<3.0.0
   run_constrained:
     - janome >=0.3.10,0.4.0
     - natto-py >=0.9.0,0.10.0
