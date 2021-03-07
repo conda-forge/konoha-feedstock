@@ -1,5 +1,5 @@
 {% set name = "konoha" %}
-{% set version = "4.6.3" %}
+{% set version = "4.6.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24a93d27bd428b846dcfacc53bcec9a1b94154062feabf67f3d4ea41c6428c14
+  sha256: 7c6f24b3bd37d3ac5a27db68fcf59d9a71c1cd0471431639459c3d6fb1eec2be
 
 build:
   number: 0
@@ -21,19 +21,21 @@ requirements:
     - poetry >=0.12
     - python >=3.6.1,<4.0.0
   run:
+    - importlib-metadata >=3.7.0,<4.0.0
     - overrides >=3.0.0,<4.0.0
-    - python >=3.6.1,<4.0.0
+    - python >=3.6,<4.0
+    - requests >=2.25.1,<3.0.0
   run_constrained:
     - janome >=0.3.10,0.4.0
     - natto-py >=0.9.0,0.10.0
     - kytea >=0.1.4, 0.2.0
     - sentencepiece >=0.1.85,0.2.0
-    - sudachipy >=0.4.9,0.5.0
+    - sudachipy ==0.4.9
     - boto3 >=1.11.0,2.0.0
     - allennlp >=1.3.0,2.0.0
     - fastapi >=0.54.1,0.55.0
     - uvicorn >=0.11.5,0.12.0
-    - sudachidict-core >=20200330
+    - sudachidict-core >=20200330,<20200331
     - nagisa >=0.2.7,0.3.0
 
 test:
