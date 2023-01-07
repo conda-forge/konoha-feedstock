@@ -1,5 +1,5 @@
 {% set name = "konoha" %}
-{% set version = "5.3.0" %}
+{% set version = "5.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2b5194569947ecb87c91a5b8b8d4e0062967d923bac89c1c034fa254240832d4
+  sha256: b29e000c802531165235b26e0a316080fbdd31695997a898c3e20a9c2f7c1a57
 
 build:
   number: 0
@@ -19,11 +19,11 @@ requirements:
   host:
     - pip
     - poetry >=1.0.2
-    - python >=3.6.1
+    - python >=3.7
   run:
-    - importlib-metadata >=4.0.0,<5.0.0
+    - importlib-metadata >=4.0.0,<7.0.0
     - overrides >=3.0.0,<4.0.0
-    - python >=3.6.1
+    - python >=3.7
     - requests >=2.26.0,<3.0.0
   run_constrained:
     - janome >=0.3.10,<0.4.0
