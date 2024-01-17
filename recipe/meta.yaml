@@ -19,11 +19,10 @@ requirements:
   host:
     - pip
     - poetry >=1.0.2
-    - python >=3.7
+    - python >=3.8
   run:
-    - importlib-metadata >=4.0.0,<7.0.0
     - overrides >=3.0.0,<4.0.0
-    - python >=3.7
+    - python >=3.8
     - requests <3.0.0
   run_constrained:
     - janome >=0.3.10,<0.4.0
