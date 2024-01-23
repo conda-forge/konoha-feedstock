@@ -153,4 +153,5 @@ Feedstock Maintainers
 =====================
 
 * [@BastianZim](https://github.com/BastianZim/)
+* [@himkt](https://github.com/himkt/)
 
