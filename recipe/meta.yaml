@@ -17,10 +17,9 @@ build:
 
 requirements:
   host:
+    - pip
     - python >=3.8,<4.0
     - poetry >=1.0.2
-    - poetry-core
-    - pip
   run:
     - python >=3.8.0,<4.0.0
     - requests <3.0.0
