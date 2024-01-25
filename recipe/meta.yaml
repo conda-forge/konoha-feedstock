@@ -36,7 +36,6 @@ requirements:
     - sphinx >=5.1.1,<6.0.0
     - pydata-sphinx-theme >=0.10.1,<0.11.0
     - nagisa >=0.2.7,<0.3.0
-    - rich >=13.7.0,<14.0.0
 
 test:
   imports:
