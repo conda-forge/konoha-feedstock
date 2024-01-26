@@ -1,5 +1,5 @@
 {% set name = "konoha" %}
-{% set version = "5.5.2" %}
+{% set version = "5.5.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5fe59118c7fe5373ae08a2360abb6f2a6891b6eb4235b76b3461f0427b5b29b0
+  sha256: de92848a8c432a712ccd3145f31bd6fbecad431e25f36a6391dd929ef987cd4e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,7 +36,6 @@ requirements:
     - sphinx >=5.1.1,<6.0.0
     - pydata-sphinx-theme >=0.10.1,<0.11.0
     - nagisa >=0.2.7,<0.3.0
-    - rich >=13.7.0,<14.0.0
 
 test:
   imports:
