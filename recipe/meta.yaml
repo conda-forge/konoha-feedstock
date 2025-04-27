@@ -1,5 +1,5 @@
 {% set name = "konoha" %}
-{% set version = "5.5.6" %}
+{% set version = "5.6.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bafb0f7357f52fe48571508787241bb800af7b701a4ae953e0a47785d89834cb
+  sha256: 9bed8cfc5d760376438add5e03b216905058500e663d84860821391b8e530ae3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
