@@ -1,5 +1,5 @@
 {% set name = "konoha" %}
-{% set version = "5.7.0" %}
+{% set version = "5.7.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2408ae0b6951ba4f03181c85fc72d270a11e1d22e4b1fabb2dcd7e08c64acd23
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 576cc4e3452d86e4e96af11fac9182190adb561cf0c699a41841b8ea4758396f
 
 build:
   number: 0
